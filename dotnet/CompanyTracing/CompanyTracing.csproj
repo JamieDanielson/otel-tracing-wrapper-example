@@ -1,0 +1,16 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net10.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+    <RootNamespace>CompanyTracing</RootNamespace>
+  </PropertyGroup>
+
+  <!--
+    No OpenTelemetry package reference on purpose. The library is built on
+    System.Diagnostics.ActivitySource, which ships in the BCL and is what the
+    OpenTelemetry .NET SDK listens to. Services pick the SDK and exporters.
+  -->
+
+</Project>
